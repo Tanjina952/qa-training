@@ -1,0 +1,49 @@
+{
+  "id": "27ea46c7-2ce2-4318-99ab-833f1c3b7fe4",
+  "version": "2.0",
+  "name": "Amazon test",
+  "url": "https://www.amazon.com/Huggies-Newborn-Diapers-Little-Snugglers/dp/B0CM4H9CSB/ref=s9_acsd_al_ot_c2_x_0_t",
+  "tests": [{
+    "id": "2f0297d8-f6a7-406f-a670-5489e7aef904",
+    "name": "baby product",
+    "commands": [{
+      "id": "4bd7fb0d-3278-4db4-85b6-63a3f152012d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/Huggies-Newborn-Diapers-Little-Snugglers/dp/B0CM4H9CSB/ref=s9_acsd_al_ot_c2_x_0_t",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e0001e2-2005-45da-8d9c-a5a41451893f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "894x511",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "653bcf54-d09e-4519-966d-b065cb2fc55e",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fe346eed-0043-4891-9c6c-f03fa9ec822e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2f0297d8-f6a7-406f-a670-5489e7aef904"]
+  }],
+  "urls": ["https://www.amazon.com/Huggies-Newborn-Diapers-Little-Snugglers/dp/B0CM4H9CSB/ref=s9_acsd_al_ot_c2_x_0_t"],
+  "plugins": []
+}
